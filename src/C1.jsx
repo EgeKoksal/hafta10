@@ -23,7 +23,6 @@ function C1() {
 
     useEffect( ()=>{
         const surekliIslem = setInterval( ()=>{
-            console.log(navigator.onLine);
             setBaglanti(navigator.onLine)
         } , 1000 )
 
@@ -41,10 +40,10 @@ function C1() {
 
             {
                 !baglanti?
-                    <div className="alert alert-danger p-3 position-fixed">
-                        Bağlantı kesildi!
-                    </div> : ""
-                }
+                <div className="alert alert-danger p-3 position-fixed">
+                    Bağlantı kesildi!
+                </div> : ""
+            }
         </>
     )
 }
